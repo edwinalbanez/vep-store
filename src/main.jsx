@@ -3,7 +3,7 @@ import App from "./App";
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import { Home } from "@/modules/home/Home";
+import { Home } from "@/pages/home";
 import { Contact } from '@/modules/contact/Contact';
 import { AuthLayout, Login } from "@/modules/auth";
 
