@@ -3,9 +3,10 @@ import App from "./App";
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import { Home } from "@/pages/home";
+import { Home, Admin } from "@/pages";
 import { Contact } from '@/modules/contact/Contact';
 import { AuthLayout, Login } from "@/modules/auth";
+import { AppLayoutTemplate } from '@/layouts/dashboard';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,20 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/admin",
+    Component: AppLayoutTemplate,
+    children: [
+      { index: true, Component: Admin}
+    ]
+  }
+  // {
+  //   path: "/admin",
+  //   Component: AppLayoutTemplate,
+  //   children: [
+  //     { index: true, Component: Admin}
+  //   ]
+  // }
 ]);
 ;
 
