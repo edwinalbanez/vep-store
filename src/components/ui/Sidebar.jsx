@@ -17,15 +17,6 @@ import {
   SidebarContext
 } from "@/context/SidebarContext";
 
-// type SidebarContext = {
-//   open: boolean,
-//   setOpen: (open: boolean) => void,
-//   openMobile: boolean,
-//   setOpenMobile: (open: boolean) => void,
-//   isMobile: boolean,
-//   toggleSidebar: () => void,
-// };
-
 
 const SidebarProvider = ({ children }) => {
   const isMobile = useIsMobile();
@@ -77,7 +68,7 @@ const Sidebar = ({
 
   return (
     <aside
-      className={`fixed inset-y-0 left-0 z-1 w-64 bg-(--snow) dark:bg-[#171717] border-r border-gray-200 dark:border-transparent flex flex-col transition-all duration-300 ease-in-out shadow-2xl md:static md:translate-x-0 md:shadow-none
+      className={`fixed inset-y-0 left-0 z-1 w-64 bg-[#fafafa] dark:bg-[#171717] border-r border-gray-200 dark:border-transparent flex flex-col transition-all duration-300 ease-in-out shadow-2xl md:static md:translate-x-0 md:shadow-none
         ${mobileStyles}
         ${desktopStyles}
         ${className}

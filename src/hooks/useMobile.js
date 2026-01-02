@@ -13,6 +13,7 @@ function mediaQueryListener(callback) {
 }
 
 function isSmallerThanBreakpoint() {
+  
   return mql.matches;
 }
 

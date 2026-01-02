@@ -3,13 +3,15 @@ import { cn } from "@/lib/utils";
 import { Moon, Sun } from "lucide-react";
 
 const ThemeToggle = () => {
-  const { appearance, updateAppearance } = useAppearance();
+  
+  const [ appearance, updateAppearance ] = useAppearance();
+  // console.log("theme");
 
   const tabs = [
     { value: "light", icon: Sun, label: "Light" },
     { value: "dark", icon: Moon, label: "Dark" },
   ];
-
+  
   return (
     <div
       className={cn(

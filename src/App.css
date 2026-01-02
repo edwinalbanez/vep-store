@@ -1,3 +1,8 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-carbon: oklch(0.2686 0 0)
+  --color-snow: #fafafa
+}
